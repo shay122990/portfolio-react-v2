@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Contact from "./components/contact/contact.component";
+import Hero from "./components/hero-section/hero.component";
+import Navbar from "./components/navbar/navbar.component";
+import Projects from "./components/projects/propjects.component";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar />
+      <Hero />
+      <Projects />
+      <Contact />
     </div>
   );
 }
-
+//refrences
+//https://morioh.com/p/175ecf5c252d
 export default App;
